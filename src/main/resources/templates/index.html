@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('/log_beijing.png');
+            background-size: cover;
+            height: 100vi;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+        }
+
+        .login-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-container input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            background-color: #6495ED;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+<div class="login-container">
+    <h2>请登录</h2>
+    <div>
+        <input type="text" placeholder="账号" name="id"><br>
+        <input type="password" placeholder="密码" name="pwd"><br>
+        <button type="submit" onclick="denglu ()">Login</button>
+    </div>
+</div>
+<script src="/js/ajax.js"></script>
+<script>
+    function denglu(){
+        var data = { mun: "TT2" };
+        ajax(data)
+    }
+
+</script>
+</body>
+</html>
