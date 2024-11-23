@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+//测试
 @RestController
 @RequestMapping("/test2")
 public class TestHtmlAndPOST {
